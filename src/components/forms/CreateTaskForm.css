@@ -1,0 +1,26 @@
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.label-md {
+    font-size: 16px;
+    color:#2c2e3a;
+}
+
+.imput-primary {
+    margin: 5px 0;
+    padding: 16px;
+    gap:10px;
+}
+
+.button-primary {
+    padding: 19px 74px;
+    font-size: 18px;
+    color: azure;
+    background-color: blue;
+    cursor: pointer;
+}
+

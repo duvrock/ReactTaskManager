@@ -1,6 +1,7 @@
 import './App.css';
 // import TaskCard from './components/task-card/TaskCard';
 import TaskViewer from './components/task-viewer/TaskViewer';
+import CreateTaskForm from './components/forms/CreateTaskForm';
 import React from 'react';
 
 function App() {
@@ -24,17 +25,7 @@ function App() {
       dueDate: new Date(2024, 1, 23),
     }
   ];
-  
-  // return React.createElement(
-  //   "div",
-  //   { className: "app-container" },
-  //   React.createElement(
-  //     "div",
-  //     {className: "app-content"},
-  //     React.createElement("h3", {},""),
-  //     React.createElement(TaskViewer, {taskList: data})
-  //   )
-  // );
+
 
   return (
     <div className="app-container">
@@ -42,6 +33,11 @@ function App() {
         <h3>Task Manager</h3>
         <TaskViewer taskList={data}/>
       </div>
+
+      <div className='side-bar-right'>
+          <h3>Create tasks</h3>
+          <CreateTaskForm />
+        </div>
     </div>
   );
 }
